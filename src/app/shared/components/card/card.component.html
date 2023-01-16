@@ -1,0 +1,21 @@
+<mat-card class="example-card">
+   <mat-card-header>
+      <mat-card-title> {{recetita.title}}</mat-card-title>
+      <mat-card-subtitle> {{recetita.subtitle}} </mat-card-subtitle>
+   </mat-card-header>
+   <img mat-card-image src={{recetita.imageSource}}>
+   <mat-card-content> {{recetita.description}} </mat-card-content>
+   <mat-card-actions>
+
+      <button [routerLink]=[recetita.id] mat-button>Ver Receta</button>
+      
+      <button (click)="editarReceta()" mat-button> <mat-icon>edit</mat-icon></button>
+
+      <button (click)="borrarReceta()" mat-button><mat-icon>delete</mat-icon></button>
+
+      <!-- <button (click)=MeGustas() mat-button>
+          <mat-icon *ngIf= MeGusta>favorite</mat-icon>   
+          <mat-icon *ngIF=!MeGusta>favorite_border</mat-icon>
+           Me Gusta</button> -->
+   </mat-card-actions>
+</mat-card>

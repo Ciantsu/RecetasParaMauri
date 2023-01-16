@@ -1,0 +1,12 @@
+.boton-flotante {    bottom: 45px;
+    height: 60px;
+    width: 60px;
+    left: 100%;
+    position: sticky;
+   ;
+}
+.contenedor-tarjetas {
+    width: 100%;
+        display: flex;
+        flex-wrap: wrap      
+}

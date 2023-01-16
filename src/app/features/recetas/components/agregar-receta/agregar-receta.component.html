@@ -1,0 +1,7 @@
+<form [formGroup]="formulario" (ngSubmit)="Guardar()">
+    <input type="text"  formControlName="titulo"> 
+    <input type="text" formControlName="subtitulo"> 
+    <input type="text" formControlName="fuenteDeImagen"> 
+    <input type="text" formControlName="descripcion">
+    <button type="submit"> <mat-icon>save</mat-icon></button>
+    </form>

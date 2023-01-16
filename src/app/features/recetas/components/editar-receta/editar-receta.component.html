@@ -1,0 +1,10 @@
+<form [formGroup]="formulario" (ngSubmit)="Guardar()" *ngIf="recetardusca">
+    
+    <input type="text" id="titulo" formControlName="titulo"> 
+    <input type="text" formControlName="subtitulo"> 
+    <input type="text" formControlName="fuenteDeImagen"> 
+    <input type="text" formControlName="descripcion">
+    <button type="submit"> <mat-icon>save</mat-icon></button>
+    </form>
+
+    <button (click)="consolear()"></button> 

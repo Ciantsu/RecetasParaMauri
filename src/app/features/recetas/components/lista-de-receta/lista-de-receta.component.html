@@ -1,0 +1,17 @@
+<div class="contenedor-tarjetas">
+  <app-card 
+
+  *ngFor="let receta of recetario" 
+  [recetita] = receta
+
+  (borreLaReceta)="borrarRecetaFront($event)" 
+  >
+
+  </app-card>
+</div>
+
+<button routerLink="/recetas/agregar" class="boton-flotante" mat-fab color="primary"
+  aria-label="Example icon button with a delete icon">
+  <mat-icon>add</mat-icon>
+</button>
+

@@ -1,0 +1,24 @@
+<mat-toolbar class='example-spacer' color="primary">
+  <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+    <span> Recetas</span>
+    <span class="example-spacer"></span>
+    <button routerLink="/recetas" mat-button>
+     Recetas
+    </button>
+    <button routerLink="/" mat-button>
+      Casita
+    </button>
+</mat-toolbar>
+
+<mat-drawer-container >
+<mat-drawer #drawer mode="over">
+  <p>Hola</p>
+</mat-drawer>
+<div >
+
+<router-outlet></router-outlet>
+</div>
+
+</mat-drawer-container>
